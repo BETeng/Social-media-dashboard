@@ -4,13 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
 
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <title>Social Media Dashboard</title>
+  <script src="index.js"></script>
   <style>
     .attribution {
       font-size: 11px;
@@ -24,93 +23,102 @@
 </head>
 
 <body>
+  <div class="flex-container">
+    <div class="header">
+      <div class="header-bold-text">Social Media Dashboard</div>
+      <div class="header-followers">Total Followers: 23,004</div>
+      <div class="switch">Dark Mode</div>
+      <div class="bigger-box">
+        <div class="big-box">
+          <div class="username"> @nathanf</div>
+          <div class="count">1987</div>
+          <div class="followers">Followers</div>
+          <div class="today">12 Today</div>
+        </div>
 
-  <div class="header">
-    <div class="header-bold-text">Social Media Dashboard</div>
-    <div class="header-followers">Total Followers: 23,004</div>
-    <div class="switch">Dark Mode</div>
+        <div class="big-box">
+          <div class="username"> @nathanf</div>
+          <div class="count">1044</div>
+          <div class="followers">Followers</div>
+          <div class="today">99 Today</div>
+        </div>
 
-    <div class="big-box">
-      <div class="username"> @nathanf</div>
-      <div class="count">1987</div>
-      <div class="followers">Followers</div>
-      <div class="today">12 Today</div>
+        <div class="big-box">
+          <div class="username"> @realnathanf</div>
+          <div class="count">11k</div>
+          <div class="followers">Followers</div>
+          <div class="today">1099 Today</div>
+        </div>
 
-      <div class="username"> @nathanf</div>
-      <div class="count">1044</div>
-      <div class="followers">Followers</div>
-      <div class="today">99 Today</div>
+        <div class="big-box">
+          <div class="username"> Nathan F.</div>
+          <div class="count">8239</div>
+          <div class="followers">Followers</div>
+          <div class="today">144 Today</div>
+        </div>
+      </div>
+    </div>
 
-      <div class="username"> @realnathanf</div>
-      <div class="count">11k</div>
-      <div class="followers">Followers</div>
-      <div class="today">1099 Today</div>
+    <!-- <main>
+      <div class="overview">Overview - Today</div>
 
-      <div class="username"> Nathan F.</div>
-      <div class="count">8239</div>
-      <div class="followers">Followers</div>
-      <div class="today">144 Today</div>
-    </div>
-  </div>
-
-  <main>
-    <div class="overview">Overview - Today</div>
-
-    <div class="small-box">
-      <div class="sb-text">Page Views</div>
-      <div class="sb-icon"></div>
-      <div class="sb-number">87</div>
-      <div class="sb-percent">3%</div>
-    </div>
-    <div class="small-box">
-      <div class="sb-text">Likes</div>
-      <div class="sb-icon"></div>
-      <div class="sb-number">52</div>
-      <div class="sb-percent">2%</div>
-    </div>
-    <div class="small-box">
-      <div class="sb-text">Likes</div>
-      <div class="sb-icon"></div>
-      <div class="sb-number">5462</div>
-      <div class="sb-percent">2257%</div>
-    </div>
-    <div class="small-box">
-      <div class="sb-text">Profile Views</div>
-      <div class="sb-icon"></div>
-      <div class="sb-number">52k</div>
-      <div class="sb-percent">1375%</div>
-    </div>
-    <div class="small-box">
-      <div class="sb-text">Retweets</div>
-      <div class="sb-icon"></div>
-      <div class="sb-number">117</div>
-      <div class="sb-percent">303%</div>
-    </div>
-    <div class="small-box">
-      <div class="sb-text">Likes</div>
-      <div class="sb-icon"></div>
-      <div class="sb-number">507</div>
-      <div class="sb-percent">553%</div>
-    </div>
-    <div class="small-box">
-      <div class="sb-text">Likes</div>
-      <div class="sb-icon"></div>
-      <div class="sb-number">107</div>
-      <div class="sb-percent">19%</div>
-    </div>
-    <div class="small-box">
-      <div class="sb-text">Total Views</div>
-      <div class="sb-icon"></div>
-      <div class="sb-number">1407</div>
-      <div class="sb-percent">12%</div>
-    </div>
-  </main>
+      <div class="small-box">
+        <div class="sb-text">Page Views</div>
+        <div class="sb-icon"></div>
+        <div class="sb-number">87</div>
+        <div class="sb-percent">3%</div>
+      </div>
+      <div class="small-box">
+        <div class="sb-text">Likes</div>
+        <div class="sb-icon"></div>
+        <div class="sb-number">52</div>
+        <div class="sb-percent">2%</div>
+      </div>
+      <div class="small-box">
+        <div class="sb-text">Likes</div>
+        <div class="sb-icon"></div>
+        <div class="sb-number">5462</div>
+        <div class="sb-percent">2257%</div>
+      </div>
+      <div class="small-box">
+        <div class="sb-text">Profile Views</div>
+        <div class="sb-icon"></div>
+        <div class="sb-number">52k</div>
+        <div class="sb-percent">1375%</div>
+      </div>
+      <div class="small-box">
+        <div class="sb-text">Retweets</div>
+        <div class="sb-icon"></div>
+        <div class="sb-number">117</div>
+        <div class="sb-percent">303%</div>
+      </div>
+      <div class="small-box">
+        <div class="sb-text">Likes</div>
+        <div class="sb-icon"></div>
+        <div class="sb-number">507</div>
+        <div class="sb-percent">553%</div>
+      </div>
+      <div class="small-box">
+        <div class="sb-text">Likes</div>
+        <div class="sb-icon"></div>
+        <div class="sb-number">107</div>
+        <div class="sb-percent">19%</div>
+      </div>
+      <div class="small-box">
+        <div class="sb-text">Total Views</div>
+        <div class="sb-icon"></div>
+        <div class="sb-number">1407</div>
+        <div class="sb-percent">12%</div>
+      </div>
+    </main>
+  </div> -->
 
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/BETeng">Brian Teng</a>.
-  </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/BETeng">Brian Teng</a>.
+    </div>
+
 </body>
 
 </html>
