@@ -7,28 +7,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+  
 
   <title>Social Media Dashboard</title>
-  <script src="index.js"></script>
   <style>
     .attribution {
       font-size: 11px;
       text-align: center;
     }
-
+    
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
-  </style>
+    </style>
+    
 </head>
 
+
+
 <body>
+  
   <div class="flex-container">
     <div class="header">
       <div class="header-box">
         <div class="header-bold-text">Social Media Dashboard</div>
         <div class="header-followers">Total Followers: 23,004</div>
         <div class="switch">Dark Mode</div>
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
       </div>
       <div class="bigger-box">
         <div class="big-box">
@@ -37,21 +47,21 @@
           <div class="followers">Followers</div>
           <div class="today">12 Today</div>
         </div>
-
+        
         <div class="big-box">
           <div class="username"> @nathanf</div>
           <div class="count">1044</div>
           <div class="followers">Followers</div>
           <div class="today">99 Today</div>
         </div>
-
+        
         <div class="big-box">
           <div class="username"> @realnathanf</div>
           <div class="count">11k</div>
           <div class="followers">Followers</div>
           <div class="today">1099 Today</div>
         </div>
-
+        
         <div class="big-box">
           <div class="username"> Nathan F.</div>
           <div class="count">8239</div>
@@ -60,10 +70,10 @@
         </div>
       </div>
     </div>
-
+    
     <!-- <main>
       <div class="overview">Overview - Today</div>
-
+      
       <div class="small-box">
         <div class="sb-text">Page Views</div>
         <div class="sb-icon"></div>
@@ -120,7 +130,7 @@
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://github.com/BETeng">Brian Teng</a>.
     </div> -->
-
+    <script src="index.js"></script>
 </body>
 
 </html>
