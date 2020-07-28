@@ -30,24 +30,25 @@ html, body {
     font-family: Inter;
     font-weight: 700;
     box-sizing: border-box;
+    background-color: var(--background-color);
 }
 .switch{
     display: inline-flex;
     right: 13%;
     position: absolute;
+    color: var(--light-text);
 }
 
 /* SLIDER  */
 
 .theme-switch-wrapper {
     display: inline-flex;
-    margin-bottom: 100px;
   }
   .theme-switch {
     display: inline-block;
-    height: 24px;
+    height: 20px;
     position: relative;
-    width: 45px;
+    width: 40px;
   }
   
   .theme-switch input {
@@ -69,11 +70,11 @@ html, body {
     background-color: #fff;
     bottom: 4px;
     content: "";
-    height: 16px;
+    height: 12px;
     left: 4px;
     position: absolute;
     transition: .4s;
-    width: 16px;
+    width: 12px;
   }
   
   input:checked + .slider {
@@ -85,7 +86,7 @@ html, body {
   }
   
   .slider.round {
-    border-radius: 24px;
+    border-radius: 20px;
   }
   
   .slider.round:before {
@@ -105,7 +106,7 @@ html, body {
 
 .header{
     height: 300px;
-    background: linear-gradient(to bottom, var(--header-color) 200px, white 201px);
+    background: linear-gradient(to bottom, var(--header-color) 200px, var(--background-color) 201px);
     width: 100%;
     flex-direction: column;
     flex-wrap: wrap;
@@ -241,12 +242,19 @@ html, body {
         justify-content: space-between;
     }
     .big-box{
-        background-color: lightpink;
-        height: 180px;
+        background-color:var(--card-color);
+        height: 160px;
         width: 180px;
     }
     .header-box{
         margin: 20px 5% 20px 5%;
+    }
+    .big-wrap{
+        height: 160px;
+        width: 180px;
+    }
+    .switch{
+        right: 5%;
     }
 }
 
@@ -264,6 +272,9 @@ html, body {
     .header-box{
         margin: 20px 8% 20px 8%;
     }
+    .switch{
+        right: 8%;
+    }
 }
 
 @media screen and (max-width: 767px){
@@ -273,18 +284,47 @@ html, body {
 }
 
 @media screen and (max-width: 480px){
-    .header{
-        background: white;
-    }
-    .bigger-box{
+
+    .flex-container{
         flex-direction: column;
+        align-items: center;
     }
-    .big-box{
-        background-color: lightseagreen;
+    .big-wrap{
         width: 100%;
         height: 180px;
-        margin-top: 20px;
     }
+    .header{
+        background: var(--background-color);
+        
+    }
+    .bigger-box{
+        margin: 5px 13% 5px 13%;
+        flex-direction: column;
+        
+    }
+    .big-box{
+        background-color:var(--card-color);
+        width: 100%;
+        height: 180px;
+        margin-top: 5px;
+   
+       
+    }
+    .header-followers{
+        display: block;
+    }
+    .switch{
+        left: 13%;
+    }
+    .theme-switch-wrapper{
+        display: inline;
+    }
+
+    .header-box{
+        margin: 20px 13% 30px 13%;
+    }
+    
+
 }
 
 @media screen and (max-width: 255px){
