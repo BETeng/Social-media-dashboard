@@ -278,16 +278,16 @@ html, body {
 }
 
 @media screen and (max-width: 767px){
-    .bigger-box{
+    /* .bigger-box{
         overflow: hidden;
-    }
+    } */
 }
 
 @media screen and (max-width: 480px){
 
     .flex-container{
         flex-direction: column;
-        align-items: center;
+        align-content: space-around;
     }
     .big-wrap{
         width: 100%;
@@ -296,17 +296,21 @@ html, body {
     .header{
         background: var(--background-color);
         
+        
     }
     .bigger-box{
         margin: 5px 13% 5px 13%;
         flex-direction: column;
+        display: flex;
+        justify-content: space-between;
+        height: 900px;
         
     }
     .big-box{
         background-color:var(--card-color);
         width: 100%;
-        height: 180px;
-        margin-top: 5px;
+        height: 200px;
+        
    
        
     }
